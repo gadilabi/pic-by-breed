@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+/* Responsible for lazy loading the images */
+
 class Loader extends Component {
     
     constructor(props){

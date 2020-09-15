@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
+/* Allows full size display of image clicked */
 class Display extends Component {
-	
+
 	displayStyles = ()=>{
 		return {
 			display: this.props.display,
