@@ -30,7 +30,6 @@ class AutoComplete extends Component {
             
         });
         
-        console.log(this.state.allValues);
         
     }
 
@@ -43,7 +42,6 @@ class AutoComplete extends Component {
     }
 
     handleChange = (e)=>{
-        console.log(this);
         const inputValue = e.target.value;
         const possibleValues = this.state.allValues.filter((value)=>value.startsWith(inputValue));
         
@@ -65,8 +63,6 @@ class AutoComplete extends Component {
         
     handleKeyDown = (e)=>{
         
-        console.log(this.dropdownRef.current);
-        console.log(this.selectedRef.current);
         
         if(e.key === "ArrowDown"){
             

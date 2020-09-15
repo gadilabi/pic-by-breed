@@ -27,7 +27,8 @@ class Gallery extends Component {
         return{
             width:"100%",
             objectFit: "cover",
-            maxHeight: "100%"   
+            maxHeight: "100%",
+			cursor: "pointer"
             
         }
         
@@ -38,9 +39,9 @@ class Gallery extends Component {
         
         const imageLinkList = this.props.imageList.slice(0, this.props.numberOfPics);
 
-        const imageList = imageLinkList.map((link)=>{
+        const imageList = imageLinkList.map((link, index)=>{
             return(
-                <img style={this.getImgStyle()} src={`${link}`} />
+                <img key={index} style={this.getImgStyle()} src={`${link}`} onClick={this.props.displayImage} />
                 
             )
             
