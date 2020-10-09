@@ -106,6 +106,14 @@ class AutoComplete extends Component {
             })
             
         }
+		
+		if(e.key === "Escape"){
+			this.setState({
+				
+				open: false
+			})
+			
+		}
         
         
     }
@@ -120,7 +128,8 @@ class AutoComplete extends Component {
                 maxHeight: "200px",
                 boxSizing: "border-box",
                 overflow: "auto",
-                backgroundColor: "white"
+                backgroundColor: "white",
+				position: "absolute"
 
             }
             
@@ -272,7 +281,7 @@ class AutoComplete extends Component {
                <div>
                 <h1>
                 
-                <span >Pic BY Breed</span>
+                <span >Pic By Breed</span>
                 
                 <img style={{height:"50px", width:"50px", marginLeft:"10px"}} src={require(`../images/paw.svg`)} alt=""/>
                 </h1>

@@ -10,15 +10,30 @@ class Gallery extends Component {
 
     getWrapperStyle(){
         
-        return {
-            
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-            gridAutoRows: "150px",
-            gridGap: "20px",
-            margin: "50px 100px"
-            
-        }
+		if(window.innerWidth > 700){
+			
+			return {
+
+				display: "grid",
+				gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+				gridAutoRows: "150px",
+				gridGap: "20px",
+				margin: "50px 100px"
+
+			}
+			
+		}
+		
+		return {
+				display: "grid",
+				gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+				gridAutoRows: "150px",
+				gridGap: "20px",
+				margin: "50px 50px"
+			
+			
+		}
+		
         
     }
 

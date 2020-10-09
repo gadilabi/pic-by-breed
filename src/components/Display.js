@@ -28,7 +28,7 @@ class Display extends Component {
             <div style={this.displayStyles()} id="display" onClick={this.props.closeDisplay}>
             <div>
             	
-            	<img style={{display:"block"}} src={this.props.src} alt=""/>
+            	<img style={{display:"block", maxWidth:"80vw", maxHeight: "80vh"}} src={this.props.src} alt=""/>
             	<div style={{backgroundColor: "#b6d2d9", textAlign: "center"}}>
             		<span>{this.props.width}x{this.props.height}</span>
 				            		
